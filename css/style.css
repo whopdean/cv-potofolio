@@ -1,0 +1,82 @@
+body {
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto; /* Ini akan membuat konten berada di tengah (centered) */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+img {
+    border-radius: 50%; /* Ini akan membuat foto profil Anda berbentuk lingkaran */
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+section {
+    background: white;
+    padding: 20px;       /* Jarak di DALAM kotak */
+    margin: 20px 0;      /* Jarak di LUAR kotak */
+    border-left: 5px solid #3498db; /* Garis dekorasi di samping kiri */
+    border-radius: 8px;  /* Membuat sudut kotak tidak tajam */
+}
+
+nav ul {
+    background: #2c3e50;
+    padding: 10px;
+    list-style: none;    /* Menghilangkan titik (bullet) pada list */
+    display: flex;       /* Menyejajarkan menu ke samping */
+    gap: 20px;           /* Jarak antar menu */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;      /* Warna berubah saat mouse mendekat (hover) */
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Sangat penting agar padding tidak merusak lebar */
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #219150;
+}
+/* Untuk layar HP (di bawah 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column; /* Menu jadi vertikal di HP */
+        text-align: center;
+        gap: 10px;
+    }
+    
+    h1 {
+        font-size: 24px; /* Kecilkan teks di layar sempit */
+    }
+}
